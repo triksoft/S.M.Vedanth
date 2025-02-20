@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>S.M.Vedanth - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 15px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #f4a261;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        section {
+            padding: 40px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portfolio div {
+            padding: 15px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+        .portfolio div:hover {
+            transform: scale(1.05);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode nav, .dark-mode footer {
+            background: #1e1e1e;
+        }
+        .dark-mode section {
+            background: #222;
+            color: #ffffff;
+        }
+        .dark-mode .hero {
+            color: white;
+        }
+        .dark-mode a {
+            color: #f4a261;
+        }
+    </style>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="toggleDarkMode()" style="position: fixed; top: 10px; right: 10px; padding: 10px; background: #333; color: white; border: none; cursor: pointer;">Toggle Dark Mode</button>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header class="hero">
+        <h1>S.M.Vedanth</h1>
+        <h2>CSE student at Amrita Vishwa Vidyapeetham Bangalore | Passionate Web Developer | Techie</h2>
+    </header>
+    <section id="about">
+      <center>
+            <img src='/Users/jmoorthy/Desktop/WhatsApp Image 2025-01-01 at 16.19.36.jpeg' alt="Profile Picture" style="width:200px; border-radius:50%;">
+        </center>
+        <h2>About Me</h2>
+        <p>My passion for programming comes from the engaging mix of logical reasoning and creative problem-solving that it requires.  Every new project is a puzzle, a test to come up with brilliant solutions using the refined syntax and reasoning of programming languages.  I am fueled by an irrepressible desire to explore the nitty-gritty of software creation, continually in search of fresh knowledge and techniques to hone my skills. The act of converting an initial thought into a sturdy, working program is truly exhilarating.  It's more like carving out a work of art, patiently whittling away at complexities and honing the code to perfection until it contains both style and efficiency.  The delight that comes with seeing my inventions materialize before my eyes, performing their defined function flawlessly, is an emotion that persists in driving me forward with programming passion. It's not just a job for me, but an intriguing endeavor that enables me to use my creativity, problem-solving abilities, and technical skills in a concrete and meaningful manner.</p>
+    </section>
+    <section id="activities">
+        <h2>Activities & Recognition</h2>
+        <ul>
+            <li>Secured 4/5 points in School level chess competition</li>
+            <li>Top 16 finalist in e-Yantra</li>
+            <li>Participated in MUN</li>
+            <li>Took part in music competitions</li>
+            <li>CTF player and member of Team bi0s</li>
+        </ul>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in Computer Science Engineering</strong> - Amrita Vishwa Vidyapeetham, Bangalore</li>
+            <li><strong>Class 12</strong> - Deeksha CFL PU College</li>
+            <li><strong>Class 10</strong> - BGS NATIONAL PUBLIC SCHOOL</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, Java, C++</li>
+            <li>Web Development: HTML, CSS</li>
+            <li>Problem Solving & Algorithmic Thinking</li>
+            <li>Singing</li>
+        </ul>
+    </section>
+    <footer>
+        &copy; 2025 S.M. Vedanth. All rights reserved.
+        <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    </footer>
+</body>
+</html>
